@@ -4,5 +4,10 @@ class DemoController < ApplicationController
   end
 
   def hello
+  	@array = [1,2,3, 'Hello']
+  	@id = params['id']
+  	@page = params[:page]
   end
+
+
 end

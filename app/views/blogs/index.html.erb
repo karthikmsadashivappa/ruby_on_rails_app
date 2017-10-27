@@ -1,0 +1,19 @@
+<h1>Listing articles</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @blogs.each do |blog| %>
+    <tr>
+      <td><%= blog.title %></td>
+      <td><%= blog.text %></td>
+      <td><%= link_to 'Show', blog_path(blog) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<h1>Hello rails</h1>
+<%= link_to 'My blog', controller: 'articles' %>
